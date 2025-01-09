@@ -1,4 +1,4 @@
-# html_to_dataframe_py
+# HTML_to_DataFrame_PY
 
 # Author                    : Dr. Marcos H. Cárdenas Mancilla
 # E-mail                    : marcos.cardenas.m@usach.cl
