@@ -6,7 +6,7 @@
 # Licence                   : AGPL V3
 # Copyright (c) 2024 Marcos H. Cárdenas Mancilla.
 
-# Descripción de html_to_dataframe_PY:
+# Descripción de HTML_to_DataFrame_PY:
 # Este código Python extrae y organiza información de un archivo HTML que contiene datos lingüísticos preprocesados con IA.
 # Características:
 # 1. parsea el HTML usando BeautifulSoup para identificar y extraer procesos verbales.
