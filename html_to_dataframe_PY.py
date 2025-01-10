@@ -13,14 +13,14 @@
 # (origen) y su traducción al inglés (meta).
 # Los códigos de color asignados a cada fila corresponden a los procesos verbales en japonés que fueron identificados y clasificados por la IA y después anotados en
 # la revisión manual. El Identificador Único corresponde a un código alfanumérico p.ej., [a] asignado automáticamente a cada una de las instancias por orden de 
-# aparición en el corpus. Significado de códigos de color: 'amarillo' = Instancia clasificada exitosamente por IA, verificada por humano,
+# aparición en el corpus. Significado de códigos de color: 'amarillo' = Instancia clasificada exitosamente por IA, verificada por humano;
 # 'rojo' =  Instancia no clasificada por IA. Requiere extracción y verificación manual.
 
 # Características:
 # 1. parsea el HTML usando BeautifulSoup para identificar y extraer procesos verbales.
 # 2. asocia los datos a un identificador único y un código de color (amarillo o rojo). 
 # 3. organiza estos datos en un DataFrame de pandas, añadiendo información adicional como la traducción al inglés de cada proceso verbal obtenida también del HTML. 
-# 4. exporta este DataFrame a un archivo Excel, creando un conjunto de datos limpio y estructurado listo para su análisis, 
+# 4. exporta este DataFrame a un archivo Excel, creando un conjunto de datos limpio y estructurado listo para su análisis,
 # donde cada fila representa un proceso verbal con su canción de origen, significado y color.
 
 # ==================================================================================================================================================================
