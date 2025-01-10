@@ -1,4 +1,5 @@
 # ==================================================================================================================================================================
+
 # Author                    : Dr. Marcos H. Cárdenas Mancilla
 # E-mail                    : marcos.cardenas.m@usach.cl
 # Date of creation          : 2024-11-15
@@ -7,11 +8,13 @@
 
 # ==================================================================================================================================================================
 
-# Descripción de html_to_dataframe_PY:
-# Este código Python extrae y organiza datos lingüísticos preprocesados de un archivo HTML correspondientes a un corpus paralelo de canciones en japonés (origen) y
-# su traducción al inglés (meta) preprocesadas con IA. 
-# Los códigos de color asignados a cada fila corresponden a los procesos verbales que fueron identificados y clasificados por la IA y después anotados en
-# la revisión manual. amarillo = Instancia clasificada exitosamente por IA; rojo =  Instancia no clasificada. Requiere extracción y verificación manual.  
+# Descripción de HTML_to_DataFrame_PY:
+# Este código Python extrae y organiza datos lingüísticos preprocesados por IA y posteriormente anotados por humanos en un corpus paralelo de canciones en japonés 
+# (origen) y su traducción al inglés (meta).
+# Los códigos de color asignados a cada fila corresponden a los procesos verbales en japonés que fueron identificados y clasificados por la IA y después anotados en
+# la revisión manual. El Identificador Único corresponde a un código alfanumérico p.ej., [a] asignado automáticamente a cada una de las instancias por orden de 
+# aparición en el corpus. Significado de códigos de color: 'amarillo' = Instancia clasificada exitosamente por IA, verificada por humano,
+# 'rojo' =  Instancia no clasificada por IA. Requiere extracción y verificación manual.
 
 # Características:
 # 1. parsea el HTML usando BeautifulSoup para identificar y extraer procesos verbales.
