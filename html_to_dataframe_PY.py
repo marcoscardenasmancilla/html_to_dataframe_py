@@ -11,13 +11,13 @@
 # Descripción de HTML_to_DataFrame_PY:
 # Este código Python extrae y organiza datos lingüísticos preprocesados por IA y posteriormente anotados por humanos en un corpus paralelo de canciones en japonés 
 # (origen) y su traducción al inglés (meta).
-# Los códigos de color asignados a cada fila corresponden a los procesos verbales en japonés que fueron identificados y clasificados por la IA y después anotados en
-# la revisión manual. El Identificador Único corresponde a un código alfanumérico p.ej., [a] asignado automáticamente a cada una de las instancias por orden de 
+# Los códigos de color asignados a cada fila corresponden a los procesos verbales en japonés que fueron identificados y clasificados por la IA y luego verificados 
+# en la revisión manual. El Identificador Único corresponde a un código alfanumérico p.ej., [a] asignado automáticamente a cada una de las instancias por orden de 
 # aparición en el corpus. Significado de códigos de color: 'amarillo' = Instancia clasificada exitosamente por IA, verificada por humano;
 # 'rojo' =  Instancia no clasificada por IA. Requiere extracción y verificación manual.
 
 # Características:
-# 1. parsea el HTML usando BeautifulSoup para identificar y extraer procesos verbales.
+# 1. parsea el HTML usando BeautifulSoup para identificar y extraer datos lingüísticos preprocesados con IA.
 # 2. asocia los datos a un identificador único y un código de color (amarillo o rojo). 
 # 3. organiza estos datos en un DataFrame de pandas, añadiendo información adicional como la traducción al inglés de cada proceso verbal obtenida también del HTML. 
 # 4. exporta este DataFrame a un archivo Excel, creando un conjunto de datos limpio y estructurado listo para su análisis,
@@ -47,7 +47,7 @@ for tag in soup.find_all('a', id=lambda x: x and x.startswith("cmnt")):
 print(f"Total identifiers extracted: {len(identifiers_in_order)}")  # Should print 304
 print(f"First 10 identifiers extracted: {identifiers_in_order[:10]}")  # Display the first 10 identifiers
 
-# Define the identifiers for each song based on the exact ranges you provided
+# Define the identifiers for each song based on the exact ranges of the assigned codes across songs
 song_identifiers = {
     "Canción 1": identifiers_in_order[:32],
     "Canción 2": identifiers_in_order[33:65],
@@ -140,3 +140,4 @@ df_final.to_excel('Final_Compiled_Verb_Processes_Canciones_1_to_10.xlsx', index=
 # Display the final DataFrame
 print("Final Compiled Verb Processes for Canciones 1 to 10")
 print(df_final.to_string(index=False))
+# ==================================================================================================================================================================
