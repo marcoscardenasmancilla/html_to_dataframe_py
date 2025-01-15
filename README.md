@@ -1,7 +1,7 @@
 # HTML_to_DataFrame_PY
 
 # Author                    : Dr. Marcos H. Cárdenas Mancilla
-# E-mail                    : marcos.cardenas.m@usach.cl
+# E-mail                    : marcoscardenasmancilla@gmail.com
 # Date of creation          : 2024-11-15
 # Licence                   : AGPL V3
 # Copyright (c) 2024 Marcos H. Cárdenas Mancilla.
